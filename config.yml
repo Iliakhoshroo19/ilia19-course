@@ -1,0 +1,16 @@
+title: ilia19
+description: 'Technolozhi '
+template:
+  repo: ilia19-template
+  name: ilia19
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
